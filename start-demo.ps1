@@ -16,7 +16,7 @@ Write-Host "[3/3] Iniciando Frontend Admin en el puerto 5174..." -ForegroundColo
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd Frontend\Arcadia-FrontEnd-Admin; npm run dev"
 
 Write-Host ""
-Write-Host "==========================================" -ForegroundColor Green
+Write-Host "=========================================" -ForegroundColor Green
 Write-Host "Abre tu navegador en:" -ForegroundColor Green
 Write-Host "  -> Login: http://localhost:5173" -ForegroundColor Green
 Write-Host "  -> Tienda: http://localhost:3000" -ForegroundColor Green
@@ -25,4 +25,4 @@ Write-Host ""
 Write-Host "Flujo de login:" -ForegroundColor Cyan
 Write-Host "  -> Usuarios con rol 'Admin' -> http://localhost:5174" -ForegroundColor Cyan
 Write-Host "  -> Usuarios con rol 'Cliente' -> http://localhost:3000" -ForegroundColor Cyan
-Write-Host "==========================================" -ForegroundColor Green
+Write-Host "=========================================" -ForegroundColor Green
