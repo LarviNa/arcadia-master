@@ -51,4 +51,15 @@ public class ComicService {
     public boolean deleteComic(String id) {
         return comics.removeIf(c -> c.getId().equals(id));
     }
+
+    public void reduceStock(String id, int quantity) {
+        comics.stream()
+                .filter(c -> c.getId().equals(id))
+                .findFirst()
+                .ifPresent(comic -> {
+                    int newStock = Math.max(0, comic.getStock() - quantity);
+                    comic.setStock(newStock);
+                    System.out.println("Comic '" + comic.getTitulo() + "' (ID: " + id + ") stock reduced by " + quantity + ". New stock: " + newStock);
+                });
+    }
 }
