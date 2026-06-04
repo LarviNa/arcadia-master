@@ -25,4 +25,4 @@ Write-Host "Se han abierto nuevas ventanas para cada microservicio." -Foreground
 Write-Host "Por favor, revisa las nuevas ventanas para asegurarte de que" -ForegroundColor Green
 Write-Host "cada uno inició correctamente (Busca 'Started [App] in...')." -ForegroundColor Green
 Write-Host "El API Gateway ahora agrupa todo en http://localhost:8083" -ForegroundColor Green
-Write-Host "=========================================" -ForegroundColor Green
+Write-Host "=========================================" -ForegroundColor Gree
