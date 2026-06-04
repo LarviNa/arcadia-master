@@ -25,14 +25,14 @@ spring:
         - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials Access-Control-Allow-Methods Access-Control-Allow-Headers, RETAIN_FIRST
       routes:
         - id: ms-usuarios
-          uri: http://localhost:8080
+          uri: ${MS_USUARIOS_URL:http://localhost:8080}
           predicates:
             - Path=/api/usuarios/**
         - id: ms-comics
-          uri: http://localhost:8081
+          uri: ${MS_COMICS_URL:http://localhost:8081}
           predicates:
             - Path=/api/comics/**
         - id: ms-ventas
-          uri: http://localhost:8082
+          uri: ${MS_VENTAS_URL:http://localhost:8082}
           predicates:
             - Path=/orders/**
